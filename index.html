@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цагаан Зураас Дагалгагч Робот</title>
+    <style>
+        /* Ерөнхий стиль */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Контейнер */
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        /* Header */
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        /* Profile Section */
+        .profile {
+            background-color: #fff;
+            padding: 50px 0;
+            margin-top: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile h2 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #222;
+            margin-bottom: 20px;
+        }
+
+        .profile-info ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .profile-info ul li {
+            margin: 15px 0;
+            font-size: 1.2em;
+        }
+
+        .profile-info ul li strong {
+            color: #222;
+        }
+
+        /* Profile Picture */
+        .profile-picture {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-picture img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 5px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Блок роботын танилцуулгын цагаан зураас */
+        .robot-line {
+            width: 100%;
+            height: 2px;
+            background-color: #fff;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .robot-description {
+            text-align: center;
+            font-size: 1.5em;
+            color: #444;
+        }
+
+        /* Роботын хөдөлгөөнтэй дүрс */
+        .robot {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .robot img {
+            width: 150px;
+            height: auto;
+            animation: moveRobot 2s infinite alternate;
+        }
+
+        @keyframes moveRobot {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(30px); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Цагаан Зураас Дагалгагч Робот</h1>
+        </div>
+    </header>
+
+    <section class="profile">
+        <div class="container">
+            <div class="profile-picture">
+                <img src="robot.jpg" alt="Цагаан зураас дагагч робот">
+            </div>
+            <div class="robot-description">
+                <p>Сайн байна уу! Би "Цагаан зураас дагагч робот" бөгөөд зураас дагаж, замыг хайж олох мэргэжилтэй.</p>
+            </div>
+            <div class="robot-line"></div>
+            <div class="robot">
+                <img src="robot-icon.png" alt="Робот дүрс">
+            </div>
+            <div class="profile-info">
+                <h2>Танилцуулга</h2>
+                <ul>
+                    <li><strong>Нэр:</strong> Цагаан Зураас Дагалгагч Робот</li>
+                    <li><strong>Мэргэжил:</strong> Зураас дагагч робот</li>
+                    <li><strong>Тусгай ур чадвар:</strong> Өндөр нарийвчлалтай зураас дагах</li>
+                    <li><strong>Байршил:</strong> Технологийн парк, Хятад</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025. Бүх эрх хуулиар хамгаалагдсан.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
